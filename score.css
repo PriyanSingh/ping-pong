@@ -1,0 +1,189 @@
+ .inverted-1 {
+    padding: 10px;
+    background:
+      conic-gradient(from 135deg at top   ,#fff 90deg,#000 0)  ,
+      conic-gradient(from -45deg at bottom,#fff 90deg,#000 0)  ,
+      conic-gradient(from 135deg at top   ,#000 90deg,#0000 0),
+      conic-gradient(from -45deg at bottom,#000 90deg,#0000 0);
+    -webkit-background-clip: text,text,padding-box,padding-box;
+            background-clip: text,text,padding-box,padding-box;
+    background-size: 230% 50%;
+    background-position: top right,bottom right;
+    background-repeat: no-repeat;
+    transition: 1s linear;
+  }
+  .inverted-1:hover {
+    background-position: top left,bottom left;
+  }
+  
+  .inverted-2 {
+    padding: 10px;
+    background:
+      conic-gradient(from 135deg at top   ,#fff 90deg,#000 0)  ,
+      conic-gradient(from -45deg at bottom,#fff 90deg,#000 0)  ,
+      conic-gradient(from 135deg at top   ,#000 90deg,#0000 0),
+      conic-gradient(from -45deg at bottom,#000 90deg,#0000 0),
+      #000;
+    -webkit-background-clip: text,text,padding-box,padding-box,text;
+            background-clip: text,text,padding-box,padding-box,text;
+    background-size: 100% 50%;
+    background-position: 50% -100%,50% 200%;
+    background-repeat: repeat-x;
+    transition: 0.4s linear,background-position 0.3s 0.5s;
+  }
+  .inverted-2:hover {
+    background-position: 50% 0,50% 100%;
+    background-size: 10% 50%;
+    transition: 0.3s,background-size 0.4s 0.3s linear;
+  }
+  
+  .inverted-3 {
+    padding: 0 10px;
+    line-height: 1em;
+    background:
+      linear-gradient(#fff 0 0),
+      linear-gradient(#000 0 0),
+      #000;
+    -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+    background-size: 100% 50%;
+    background-position: 100vmax 100%;
+    box-shadow: 100vmax 0.5em 0 0 #0000;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+  }
+  .inverted-3:hover {
+    background-position: 0 100%;
+    box-shadow: 0 0.5em 0 0 #000;
+  }
+  .inverted-4 {
+    padding: 0 10px;
+    line-height: 1.4em;
+    background:
+      linear-gradient(#fff 0 0),
+      linear-gradient(#000 0 0),
+      #000;
+    -webkit-background-clip:text,padding-box;
+    background-clip:text,padding-box;
+    background-size: 100% 50%;
+    background-position: -100vmax 100%;
+    box-shadow: -100vmax 0.7em 0 0 #0000;
+    clip-path: polygon(-100vmax 0,100% 0,100% calc(100% + 0.7em),-100vmax calc(100% + 0.7em));
+    background-repeat: no-repeat;
+    transition: 0.4s, box-shadow 0.3s 0.4s,background-position 0.3s 0.4s;
+  }
+  .inverted-4:hover {
+    background-position: 0 100%;
+    background-size: 100% 100%;
+    box-shadow: 0 0.7em 0 0 #000;
+    clip-path: polygon(-100vmax 0,100% 0,100% 100%,-100vmax 100%);
+    transition: 0.4s, clip-path 0.3s 0.4s,background-size 0.3s 0.4s;
+  }
+  
+  .inverted-5 {
+    padding: 10px;
+    background:
+      radial-gradient(100% 100% at top left,#fff 98%,#000) ,
+      radial-gradient(100% 100% at bottom right,#fff 98%,#000) ,
+      radial-gradient(100% 100% at top left,#000 98%,#0000) ,
+      radial-gradient(100% 100% at bottom right,#000 98%,#0000) ,
+      #000;
+    -webkit-background-clip: text,text,padding-box,padding-box,text;
+            background-clip: text,text,padding-box,padding-box,text;
+    background-size: 0% 0%;
+    background-position: top left, bottom right;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+  }
+  .inverted-5:hover {
+    background-size: 50% 100%;
+  }
+  
+  .inverted-6 {
+    --cos45:0.7071;
+    --g1: #000  calc(0.7em*var(--cos45)),#fff 0 calc(0.7em*var(--cos45) + 25px),#000  0;
+    --g2: #0000 calc(0.7em*var(--cos45)),#000 0 calc(0.7em*var(--cos45) + 25px),#0000 0;
+    padding: 0 10px;
+    line-height: 1.4em;
+    background:
+      linear-gradient(135deg,var(--g1)) top 0 right var(--_p,-100%),
+      linear-gradient(135deg,var(--g2)) top 0 right var(--_p,-100%),
+  
+      linear-gradient( 45deg,var(--g1)) bottom 0 right var(--_p,-100%),
+      linear-gradient( 45deg,var(--g2)) bottom 0 right var(--_p,-100%),
+  
+      linear-gradient(-45deg,var(--g1)) bottom 0 left var(--_p,-100%),
+      linear-gradient(-45deg,var(--g2)) bottom 0 left var(--_p,-100%),
+  
+      linear-gradient(-135deg,var(--g1)) top 0 left var(--_p,-100%),
+      linear-gradient(-135deg,var(--g2)) top 0 left var(--_p,-100%),
+      
+      #000;
+    -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+  }
+  .inverted-6:hover {
+     --_p:0%;
+  }
+  
+  
+  .inverted-7 {
+    padding:0 10px;
+    line-height: 1.4em;
+    background:
+     conic-gradient(from -115deg,#fff 50deg,#0000 0) var(--_p,-1.2em) 0/2.4em 1.2em,
+     conic-gradient(from -115deg,#000 50deg,#0000 0) var(--_p,-1.2em) 0/2.4em 1.2em,
+     linear-gradient(90deg,#fff calc(100% - 1.2em),#0000 0)  bottom 50% left 0/var(--_d,0%) 15px,
+     linear-gradient(90deg,#000 calc(100% - 1.2em),#0000 0)  bottom 50% left 0/var(--_d,0%) 15px,
+     #000;
+    -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+    background-repeat: no-repeat;
+    transition: 0.5s; 
+   }
+   .inverted-7:hover {
+     --_d: 100%;
+     --_p: calc(100% + 1.2em);
+   }
+  
+  .inverted-8 {
+    --x: 140px;
+    padding: 0 10px;
+    line-height: 1.4em;
+    box-shadow: 0 0 0px 100px var(--c,#0000);
+    background:
+      conic-gradient(from 60deg,#fff 0 60deg,#000 0),
+      conic-gradient(from 60deg,#000 0 60deg,#0000 0),
+      #000;
+    -webkit-background-clip: text,padding-box,text;
+            background-clip: text,padding-box,text;
+    background-size: 300px 300px;
+    background-position: calc(50% + var(--x)) 50%;
+    background-repeat: no-repeat;
+    clip-path: polygon(1.5px 1.5px,calc(50% + 0.7em*1.73 - 1.5px + var(--x)) 1.5px,calc(50% + 160px + var(--x)) calc(50% - 80px),calc(50% + 160px + var(--x)) calc(50% + 80px),calc(50% + 0.7em*1.73 - 1.5px + var(--x)) calc(100% - 1.5px),1.5px calc(100% - 1.5px));
+    transition: 0.5s;
+  }
+  .inverted-8:hover {
+     --p:0%;
+     --c:#000;
+     --x:0px;
+  }
+  
+  
+  [class] {
+    font-weight: bold;
+    color:#0000;
+    display:inline-block;
+    font-size:40px;
+    font-family:sans-serif;
+    margin:25px;
+    cursor:pointer;
+  }
+  
+  body {
+    text-align:center;
+  } 
+    
